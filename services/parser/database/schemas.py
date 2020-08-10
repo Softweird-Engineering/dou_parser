@@ -7,3 +7,8 @@ class JobSchema(Schema):
     description = fields.String(attribute='description')
     company = fields.String(attribute='company')
     date = fields.Date(attribute='date')
+
+class UserSchema(Schema):
+    id = fields.Integer(attribute='id')
+    chat_id = fields.Integer(attribute='chat_id')
+

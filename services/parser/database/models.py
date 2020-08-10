@@ -11,3 +11,9 @@ class Job(Base):
     description = Column(Text, nullable=False)
     company = Column(String(40), nullable=False)
     date = Column(Date)
+
+class User(Base):
+    __tablename__ = 'users'
+
+    id = Column(Integer, primary_key=True)
+    chat_id = Column(Integer, unique=True, nullable=False)
