@@ -20,7 +20,7 @@ def test_get_all(db):
     assert len(result) == 2
 
 
-def test_get_all():
+def test_create(db):
     j1 = dict(link="https://hangouts.google.com/call/yLTXfIKVHm08JPKDSs1QACE", date=str(datetime.now().date()),
              title='Sndfjsdnf', description="slidnojsdnfjksjndfksjdnfksjdnf", company="klsdfksndf")
 

@@ -28,7 +28,7 @@ class DB:
             return self.__session
 
         def init_db(self):
-            from .models import Base
+            self.__session.commit()
             self.__Base.metadata.drop_all(self.__engine)
             self.__Base.metadata.create_all(self.__engine)
 
