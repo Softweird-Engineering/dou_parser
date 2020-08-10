@@ -3,7 +3,7 @@ import os
 from requests.models import Response
 from bs4 import BeautifulSoup
 
-from headers import headers
+from config import headers
 
 print('Successfully started')
 
@@ -13,10 +13,7 @@ def get_html(url: str) -> str:
     return r.text
 
 
-def convert2data(html):
+def convert2soup(html):
     soup = BeautifulSoup(html, 'lxml')
     return soup
 
-
-bs: BeautifulSoup = convert2data(get_html('https://dou.ua/'))
-print(bs.find('div', {'class': 'g-page'}).find('header').find('ul').find_all('li'))

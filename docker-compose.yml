@@ -2,7 +2,7 @@ version: '3.7'
 services:
   parser:
     build: ./services/parser
-    command: python main.py
+    command: python client.py
     volumes:
       - ./services/parser/:/usr/src/app/
     env_file:
