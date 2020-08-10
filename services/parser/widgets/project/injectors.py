@@ -39,8 +39,6 @@ class DB:
 
         return DB.__db
 
-
-
     def __init__(self):
         """Constructor not implemented in singleton pattern"""
         raise NotImplementedError()

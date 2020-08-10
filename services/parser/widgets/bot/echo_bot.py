@@ -14,7 +14,7 @@ async def start_polling():
 	@bot.message_handler(commands=['start'])
 	def add_new(message):
 		bot.reply_to(message, "You was successfully added to database.\n Wait for next new vacancies! ( ^ _ ^) ")
-
+		# TODO: connect to User service
 	while True:
 		try:
 			await asyncio.sleep(2)
@@ -24,13 +24,17 @@ async def start_polling():
 			await asyncio.sleep(10)
 
 
-async def send_message():
+async def check_for_new_jobs():
 	while True:
-		bot.send_message(775621366, "sdiufsuodf suidbf uisdb isbdiu")
+		# TODO: connect to service
+		# TODO: run a delivery by chat id
+		# bot.send_message(775621366, "sdiufsuodf suidbf uisdb isbdiu")
 		await asyncio.sleep(2)
 
 
 async def main():
-	await asyncio.gather(send_message(), start_polling())
+	await asyncio.gather(check_for_new_jobs(), start_polling())
 
-asyncio.run(main())
+
+def start():
+	asyncio.run(main())

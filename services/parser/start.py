@@ -1,8 +1,10 @@
-from config import DATABASE_URL
-from database.injectors import DB
-
+from config import DATABASE_URL, PARSE_URL # noqa
+from widgets.project.injectors import DB # noqa
+from widgets.bot.echo_bot import start # noqa
+from widgets.project.client import parse_feed # noqa
 import time
-time.sleep(1)
 
+time.sleep(1)
 DB.instance(DATABASE_URL).init_db()
-from bot.echo_bot import bot, asyncio
+# start()
+parse_feed(PARSE_URL)

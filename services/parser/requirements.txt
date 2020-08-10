@@ -7,3 +7,4 @@ pytest==6.0.1
 pyTelegramBotAPI==3.7.2
 marshmallow==3.7.1
 asyncio==3.4.3
+feedparser==5.2.1

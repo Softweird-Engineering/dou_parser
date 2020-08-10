@@ -1,4 +1,4 @@
-from .injectors import DB
+from ..project.injectors import DB
 from .models import Job
 from .schemas import JobSchema
 

@@ -1,6 +1,6 @@
-from ..project.tests.fixtures import db
 from datetime import datetime
-from .services import JobService, Job, JobSchema
+from ..tests.fixtures import db # noqa
+from .services import JobService, Job
 
 
 def test_get_all(db):

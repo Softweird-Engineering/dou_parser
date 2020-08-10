@@ -1,4 +1,4 @@
-from .injectors import DB
+from ..project.injectors import DB
 from sqlalchemy import Column, Integer, String, Text, Date
 Base = DB.instance().Base
 
