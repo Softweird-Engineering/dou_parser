@@ -19,8 +19,7 @@ class JobService:
         """
         job = Job(**JobSchema().load(new_job))
 
-        ex_job = session.query(Job).filter(Job.link == new_job["link"])
-
+        ex_job = session.query(Job).filter(Job.link == new_job["link"]).first()
         if ex_job:
             return False
         else:

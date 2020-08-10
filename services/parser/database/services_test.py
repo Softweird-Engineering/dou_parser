@@ -18,3 +18,20 @@ def test_get_all(db):
     assert j1 in result
     assert j2 in result
     assert len(result) == 2
+
+
+def test_get_all():
+    j1 = dict(link="https://hangouts.google.com/call/yLTXfIKVHm08JPKDSs1QACE", date=str(datetime.now().date()),
+             title='Sndfjsdnf', description="slidnojsdnfjksjndfksjdnfksjdnf", company="klsdfksndf")
+
+    res: bool = JobService.create(j1)
+
+    assert res
+    print(JobService.get_all())
+
+    j2 = dict(link="https://hangouts.google.com/call/yLTXfIKVHm08JPKDSs1QACE", date=str(datetime.now().date()),
+              title='Sndfjsdnf', description="slidnojsdnfjksjndfksjdnfksjdnf", company="klsdfksndf")
+
+    res2: bool = JobService.create(j2)
+
+    assert not res2
