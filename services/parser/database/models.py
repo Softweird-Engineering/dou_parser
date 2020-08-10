@@ -1,6 +1,6 @@
-from sqlalchemy.ext.declarative import declarative_base
+from .injectors import DB
 from sqlalchemy import Column, Integer, String, Text, Date
-Base = declarative_base()
+Base = DB.instance().Base
 
 
 class Job(Base):

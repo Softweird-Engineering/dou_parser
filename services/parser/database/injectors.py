@@ -8,13 +8,20 @@ class DB:
         def __init__(self, url: str):
             from sqlalchemy import create_engine
             from sqlalchemy.orm import sessionmaker
+            from sqlalchemy.ext.declarative import declarative_base
+            self.__Base = declarative_base()
 
             self.__engine = create_engine(url, echo=True)
-            self.__session = sessionmaker(bind=self.__engine)
+
+            self.__session = sessionmaker(bind=self.__engine)()
 
         @property
         def engine(self):
             return self.__engine
+
+        @property
+        def Base(self):
+            return self.__Base
 
         @property
         def session(self):
@@ -22,8 +29,7 @@ class DB:
 
         def init_db(self):
             from .models import Base
-            Base.metadata.create_all(self.__engine)
-            self.__session.begin()
+            self.__Base.metadata.create_all(self.__engine)
 
     @staticmethod
     def instance(*args) -> WrappedDB:
