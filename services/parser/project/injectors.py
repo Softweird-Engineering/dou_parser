@@ -19,3 +19,8 @@ class DB:
             DB.__db = DB.WrappedDB(*args)
 
         return DB.__db
+
+    def __init__(self):
+        """Constructor not implemented in singleton pattern"""
+        raise NotImplementedError()
+
