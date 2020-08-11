@@ -1,0 +1,13 @@
+1. title + published
+
+Sample: Unity Game Developer в 24Play, Чернигов
+And date...
+
+2. link
+
+Link to job
+
+3. summary
+
+imgkit.from_string("<meta charset='UTF-8'>"+NewsFeed.entries[1].summary, 'out.jpg', options={'encoding': "UTF-8"})
+

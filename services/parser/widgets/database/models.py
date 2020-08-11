@@ -1,21 +1,17 @@
 from ..project.injectors import DB
-from sqlalchemy import Column, Integer, String, Text, Date
+from sqlalchemy import Column, Integer, String
 Base = DB.instance().Base
 
 
 class Job(Base):
-    __tablename__ = 'jobs'
+    __tablename__ = 'jobs' # noqa
 
     id = Column(Integer, primary_key=True)
     link = Column(String(250), unique=True)
-    title = Column(String(200), nullable=False)
-    description = Column(Text, nullable=False)
-    company = Column(String(40), nullable=False)
-    date = Column(Date)
 
 
 class User(Base):
-    __tablename__ = 'users'
+    __tablename__ = 'users' # noqa
 
     id = Column(Integer, primary_key=True)
     chat_id = Column(Integer, unique=True, nullable=False)

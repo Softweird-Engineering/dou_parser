@@ -8,3 +8,4 @@ pyTelegramBotAPI==3.7.2
 marshmallow==3.7.1
 asyncio==3.4.3
 feedparser==5.2.1
+imgkit==1.0.2

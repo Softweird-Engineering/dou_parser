@@ -4,7 +4,7 @@ from requests.models import Response
 from bs4 import BeautifulSoup
 import feedparser
 
-headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
+headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'} # noqa
 
 print('Successfully started PARSER!')
 
@@ -20,8 +20,6 @@ def convert2soup(html):
 
 
 def parse_feed(url):
-    NewsFeed = feedparser.parse(url)
-    print(NewsFeed.entries[1].summary)
+    return feedparser.parse(url).entries
 
-    # ['title', 'title_detail', 'links', 'link', 'summary', 'summary_detail', 'published', 'published_parsed', 'id', 'guidislink']
 

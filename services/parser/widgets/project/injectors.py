@@ -1,3 +1,8 @@
+import time
+from typing import List
+IMG_NAME = 'out.jpg'
+
+
 class DB:
     """Singleton for db init"""
     __db = None
@@ -31,6 +36,7 @@ class DB:
             self.__session.commit()
             self.__Base.metadata.drop_all(self.__engine)
             self.__Base.metadata.create_all(self.__engine)
+            # self.__session.commit()
 
     @staticmethod
     def instance(*args) -> WrappedDB:
@@ -43,3 +49,28 @@ class DB:
         """Constructor not implemented in singleton pattern"""
         raise NotImplementedError()
 
+
+class Request:
+    def __init__(self, users: List[int], text_message: str):
+        self.__users = users
+        self.__message = text_message
+        self.image = IMG_NAME
+
+    @property
+    def users_id(self):
+        return self.__users
+
+    @property
+    def message(self):
+        return self.__message
+
+
+def inf(func):
+    def wrapper(*args):
+        while True:
+            try:
+                return func(*args)
+            except:
+                print('Something goes wrong!!')
+                time.sleep(10)
+    return wrapper
