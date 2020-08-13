@@ -1,5 +1,5 @@
 from datetime import datetime
-from ..tests.fixtures import db # noqa
+from ..tests.fixtures import db  # noqa
 from .services import JobService, Job
 
 
@@ -20,18 +20,18 @@ def test_get_all(db):
     assert len(result) == 2
 
 
-def test_create(db):
-    j1 = dict(link="https://hangouts.google.com/call/yLTXfIKVHm08JPKDSs1QACE", date=str(datetime.now().date()),
-             title='Sndfjsdnf', description="slidnojsdnfjksjndfksjdnfksjdnf", company="klsdfksndf")
-
-    res: bool = JobService.create(j1)
-
-    assert res
-    print(JobService.get_all())
-
-    j2 = dict(link="https://hangouts.google.com/call/yLTXfIKVHm08JPKDSs1QACE", date=str(datetime.now().date()),
-              title='Sndfjsdnf', description="slidnojsdnfjksjndfksjdnfksjdnf", company="klsdfksndf")
-
-    res2: bool = JobService.create(j2)
-
-    assert not res2
+# def test_create(db):
+#     j1 = dict(link="https://hangouts.google.com/call/yLTXfIKVHm08JPKDSs1QACE", date=str(datetime.now().date()),
+#               title='Sndfjsdnf', description="slidnojsdnfjksjndfksjdnfksjdnf", company="klsdfksndf")
+#
+#     res: bool = JobService.create(j1)
+#
+#     assert res
+#     print(JobService.get_all())
+#
+#     j2 = dict(link="https://hangouts.google.com/call/yLTXfIKVHm08JPKDSs1QACE", date=str(datetime.now().date()),
+#               title='Sndfjsdnf', description="slidnojsdnfjksjndfksjdnfksjdnf", company="klsdfksndf")
+#
+#     res2: bool = JobService.create(j2)
+#
+#     assert not res2

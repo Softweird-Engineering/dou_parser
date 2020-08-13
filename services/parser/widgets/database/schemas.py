@@ -9,4 +9,3 @@ class JobSchema(Schema):
 class UserSchema(Schema):
     id = fields.Integer(attribute='id')
     chat_id = fields.Integer(attribute='chat_id')
-

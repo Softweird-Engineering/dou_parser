@@ -1,4 +1,3 @@
-from typing import List
 import imgkit
 
 from ..database.services import UserService, JobService

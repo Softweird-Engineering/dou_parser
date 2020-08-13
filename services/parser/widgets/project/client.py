@@ -1,5 +1,4 @@
 import requests
-import os
 from requests.models import Response
 from bs4 import BeautifulSoup
 import feedparser
@@ -21,5 +20,3 @@ def convert2soup(html):
 
 def parse_feed(url):
     return feedparser.parse(url).entries
-
-

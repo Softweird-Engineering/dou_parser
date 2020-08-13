@@ -9,7 +9,7 @@ DB.instance(DATABASE_URL)
 
 def start_app():
     from widgets.database.models import User, Job # noqa
-    DB.instance().init_db()
+    # DB.instance().init_db()
     from widgets.bot.echo_bot import start  # noqa
 
     print('started')

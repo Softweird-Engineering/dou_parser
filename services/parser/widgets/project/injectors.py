@@ -16,7 +16,7 @@ class DB:
             from sqlalchemy.ext.declarative import declarative_base
             self.__Base = declarative_base()
 
-            self.__engine = create_engine(url, echo=True)
+            self.__engine = create_engine(url, echo=False)
 
             self.__session = sessionmaker(bind=self.__engine)()
 
@@ -25,7 +25,7 @@ class DB:
             return self.__engine
 
         @property
-        def Base(self):
+        def Base(self): # noqa
             return self.__Base
 
         @property
@@ -70,7 +70,7 @@ def inf(func):
         while True:
             try:
                 return func(*args)
-            except:
+            except: # noqa
                 print('Something goes wrong!!')
                 time.sleep(10)
     return wrapper
