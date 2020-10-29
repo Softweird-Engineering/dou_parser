@@ -51,10 +51,10 @@ class DB:
 
 
 class Request:
-    def __init__(self, users: List[int], text_message: str):
+    def __init__(self, users: List[int], text_message: str, img):
         self.__users = users
         self.__message = text_message
-        self.image = IMG_NAME
+        self.image = img
 
     @property
     def users_id(self):

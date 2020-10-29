@@ -9,3 +9,4 @@ marshmallow==3.8.0
 asyncio==3.4.3
 feedparser==6.0.1
 imgkit==1.0.2
+async-timeout==3.0.1

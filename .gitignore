@@ -3,3 +3,4 @@ venv
 .env.bot
 *.pyc
 .pytest_cache
+.env.db

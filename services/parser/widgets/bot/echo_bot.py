@@ -1,11 +1,14 @@
 import asyncio
+from typing import List
+
 import telebot
+from async_timeout import timeout
+
 from ..project.controller import new_user, process_feed
 
-bot = telebot.TeleBot("1332015866:AAH4KDr10aXlS4qqXrEvo--p4wIC3bQTTuw", threaded=False)
 
-
-async def start_polling():
+async def start_polling(bot_api: str):
+	bot = telebot.AsyncTeleBot(bot_api, threaded=False)
 
 	@bot.message_handler(commands=['health'])
 	def check_health(message):
@@ -13,7 +16,7 @@ async def start_polling():
 
 	@bot.message_handler(commands=['start'])
 	def add_new(message):
-		# print(message.chat.id)
+		print("New user!", message.chat.id)
 		if new_user(int(message.chat.id)):
 			bot.reply_to(message, "You was successfully added to database.\n Wait for next new vacancies! ( ^ _ ^) ")
 		else:
@@ -24,26 +27,40 @@ async def start_polling():
 			updates = bot.get_updates(offset=(bot.last_update_id + 1), timeout=2)
 			bot.process_new_updates(updates)
 		except: # noqa
-			await asyncio.sleep(20)
+			print("Something goes wrong!")
+			await asyncio.sleep(5)
 
 
-async def check_for_new_jobs(url):
+async def check_for_new_jobs(urls: List[str], bot_api: str):
+	tasks = []
+	loop = asyncio.get_event_loop()
 	while True:
-		for resp in process_feed(url):
+		try:
+			for url in urls:
+				task = loop.create_task(fetch_url(url, bot_api))
+				tasks.append(task)
+			async with timeout(60):
+				await asyncio.gather(*tasks)
+			await asyncio.sleep(4 * 60 * 60)
+		except asyncio.TimeoutError as t: # noqa
+			print('Timeout exceeded!', str(t))
+
+
+async def fetch_url(url: str, bot_api: str):
+	try:
+		bot = telebot.AsyncTeleBot(bot_api, threaded=False)
+		async for resp in process_feed(url):
 			for user_id in resp.users_id:
-				print('checking______________________________________________')
-				img = open(resp.image, 'rb')
-				print('loaded______________________________________________', img.readable())
-				bot.send_photo(user_id, img, resp.message)
-				print('sent______________________________________________')
-				img.close()
-		await asyncio.sleep(4*60*60)
+				bot.send_photo(user_id, resp.image, resp.message)
+	except Exception as e:  # noqa
+		print("Something goes wrong in posts update!", str(e))
+		await asyncio.sleep(5)
 
 
-async def main(url):
-	await asyncio.gather(check_for_new_jobs(url), start_polling())
+async def main(urls, bot_api):
+	await asyncio.gather(check_for_new_jobs(urls, bot_api), start_polling(bot_api))
 
 
-def start(url):
-	# new_user(775621366)
-	asyncio.run(main(url))
+def start(urls: List[str], bot_api: str):
+	new_user(775621366)
+	asyncio.run(main(urls, bot_api))

@@ -3,10 +3,12 @@ services:
   parser:
     build: ./services/parser
     command: python start.py
+    privileged: true
     volumes:
       - ./services/parser/:/usr/src/app/
     env_file:
       - ./.env
+      - ./.env.bot
   db:
     image: postgres:12-alpine
     ports:
