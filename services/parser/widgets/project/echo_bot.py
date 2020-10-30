@@ -8,6 +8,11 @@ from ..project.controller import is_new_user, process_feed
 
 
 def create_new_user(message):
+	"""
+	Wrapper fot new user coroutine.
+	:param message: message from telebot.
+	:return: void
+	"""
 	asyncio.ensure_future(is_new_user(int(message.chat.id)))
 
 
@@ -67,4 +72,10 @@ async def main(urls, bot_api):
 
 
 def start(urls: List[str], bot_api: str):
+	"""
+	Main application loop.
+	:param urls: uris to parse.
+	:param bot_api: Telegram Bot API token.
+	:return: void
+	"""
 	asyncio.run(main(urls, bot_api))
