@@ -1,17 +1,19 @@
 from config import DATABASE_URL, PARSE_URLS, BOT_API, INIT_DB # noqa
-from widgets.project.injectors import DB # noqa
+from widgets.project.injectors import DSN # noqa
+from widgets.project.db import create_tables # noqa
 import time
 
 time.sleep(4)
 
-DB.instance(DATABASE_URL)
+DSN.get(DATABASE_URL)
 
 
 def start_app():
-    from widgets.database.models import User, Job # noqa
+    from widgets.project.echo_bot import start  # noqa
+
     if INIT_DB:
-        DB.instance().init_db()
-    from widgets.bot.echo_bot import start  # noqa
+        print('db initialization')
+        create_tables()
 
     print('started')
     start(PARSE_URLS, BOT_API)

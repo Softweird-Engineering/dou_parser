@@ -3,30 +3,39 @@ import feedparser
 import asyncio
 import concurrent
 
-from ..database.services import UserService, JobService
+from .db import get_all_user_ids, is_new_job, is_new_user # noqa
 
 from .injectors import Request
 
 
 async def parse_feed(url):
+    """
+    Function parses feed in local event loop.
+    :param url: RSS feed uri to parse.
+    :return: entries of RSS feed
+    """
     loop = asyncio.get_event_loop()
     return await loop.run_in_executor(None, feedparser.parse, url)
 
 
 def make_message(entry):
+    """
+    Makes every entry representative for user delivery.
+    :param entry: RSS entry from parser.
+    :return: user-friendly string with all job's info.
+    """
     return entry.title + "\n\n Ссылка на вакансию: " + entry.link + "\n\n Опубликовано: " + entry.published
 
 
 async def process_feed(url):
+    print('Processing url:', url)
     loop = asyncio.get_event_loop()
-    user_ids = UserService.get_all_ids()
+    user_ids = await get_all_user_ids()
+    # print(user_ids)
+    # print(len(JobService.get_all()))
     for entry in (await parse_feed(url=url)).entries:
-        if JobService.create(entry.link):
-            img_name = str(entry.link)+".out"
-            with concurrent.futures.ProcessPoolExecutor() as pool:
-                img = await loop.run_in_executor(pool, imgkit.from_string, "<meta charset='UTF-8'>" + entry.summary, False)
+        if await is_new_job(entry.link):
+            with concurrent.futures.ProcessPoolExecutor() as pool: # noqa
+                img = await loop.run_in_executor(pool, imgkit.from_string,
+                                                 "<meta charset='UTF-8'>" + entry.summary, False, {'quiet': ''})
             yield Request(user_ids, make_message(entry), img)
-
-
-def new_user(user_chat_id: int) -> bool:
-    return UserService.create(user_chat_id)

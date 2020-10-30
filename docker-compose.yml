@@ -3,7 +3,7 @@ services:
   parser:
     build: ./services/parser
     command: python start.py
-    privileged: true
+#    privileged: true
     volumes:
       - ./services/parser/:/usr/src/app/
     env_file:

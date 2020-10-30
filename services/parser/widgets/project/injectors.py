@@ -1,49 +1,16 @@
-import time
 from typing import List
-IMG_NAME = 'out.jpg'
 
 
-class DB:
+class DSN:
     """Singleton for db init"""
-    __db = None
-
-    class WrappedDB:
-        """Wrapped database engine class"""
-
-        def __init__(self, url: str):
-            from sqlalchemy import create_engine
-            from sqlalchemy.orm import sessionmaker
-            from sqlalchemy.ext.declarative import declarative_base
-            self.__Base = declarative_base()
-
-            self.__engine = create_engine(url, echo=False)
-
-            self.__session = sessionmaker(bind=self.__engine)()
-
-        @property
-        def engine(self):
-            return self.__engine
-
-        @property
-        def Base(self): # noqa
-            return self.__Base
-
-        @property
-        def session(self):
-            return self.__session
-
-        def init_db(self):
-            self.__session.commit()
-            self.__Base.metadata.drop_all(self.__engine)
-            self.__Base.metadata.create_all(self.__engine)
-            # self.__session.commit()
+    __dsn = None
 
     @staticmethod
-    def instance(*args) -> WrappedDB:
-        if not DB.__db:
-            DB.__db = DB.WrappedDB(*args)
+    def get(name: str = ""):
+        if not DSN.__dsn:
+            DSN.__dsn = name
 
-        return DB.__db
+        return DSN.__dsn
 
     def __init__(self):
         """Constructor not implemented in singleton pattern"""
@@ -63,14 +30,3 @@ class Request:
     @property
     def message(self):
         return self.__message
-
-
-def inf(func):
-    def wrapper(*args):
-        while True:
-            try:
-                return func(*args)
-            except: # noqa
-                print('Something goes wrong!!')
-                time.sleep(10)
-    return wrapper

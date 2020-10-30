@@ -1,10 +1,14 @@
 import asyncio
-from typing import List
+from typing import List, Dict
 
 import telebot
 from async_timeout import timeout
 
-from ..project.controller import new_user, process_feed
+from ..project.controller import is_new_user, process_feed
+
+
+def create_new_user(message):
+	asyncio.ensure_future(is_new_user(int(message.chat.id)))
 
 
 async def start_polling(bot_api: str):
@@ -17,17 +21,15 @@ async def start_polling(bot_api: str):
 	@bot.message_handler(commands=['start'])
 	def add_new(message):
 		print("New user!", message.chat.id)
-		if new_user(int(message.chat.id)):
-			bot.reply_to(message, "You was successfully added to database.\n Wait for next new vacancies! ( ^ _ ^) ")
-		else:
-			bot.reply_to(message, "You already in our database <3 ")
+		create_new_user(message)
+		bot.reply_to(message, "Now you are in our database <3 ")
 	while True:
 		try:
 			await asyncio.sleep(5)
 			updates = bot.get_updates(offset=(bot.last_update_id + 1), timeout=2)
 			bot.process_new_updates(updates)
-		except: # noqa
-			print("Something goes wrong!")
+		except Exception as e: # noqa
+			print("Something goes wrong!", str(e))
 			await asyncio.sleep(5)
 
 
@@ -39,9 +41,11 @@ async def check_for_new_jobs(urls: List[str], bot_api: str):
 			for url in urls:
 				task = loop.create_task(fetch_url(url, bot_api))
 				tasks.append(task)
-			async with timeout(60):
+			async with timeout(100):
 				await asyncio.gather(*tasks)
-			await asyncio.sleep(4 * 60 * 60)
+			print("Fetch complete")
+			await asyncio.sleep(7200)
+			print("Be prepared for next fetch...")
 		except asyncio.TimeoutError as t: # noqa
 			print('Timeout exceeded!', str(t))
 
@@ -58,9 +62,23 @@ async def fetch_url(url: str, bot_api: str):
 
 
 async def main(urls, bot_api):
+	await is_new_user(775621366)
 	await asyncio.gather(check_for_new_jobs(urls, bot_api), start_polling(bot_api))
 
 
 def start(urls: List[str], bot_api: str):
-	new_user(775621366)
 	asyncio.run(main(urls, bot_api))
+
+
+
+
+
+
+
+
+
+
+
+
+def d1():
+	return 'sdfsdf'
