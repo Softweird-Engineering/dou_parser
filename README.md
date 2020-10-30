@@ -1,10 +1,20 @@
 ## DOU.UA parser bot
 ### Sample post
-![](https://github.com/noasck/dou_parser/sample.png)
+![](https://github.com/noasck/dou_parser/blob/master/sample.png)
 ### Requirements and libraries
 
 - docker-compose version >= 1.25.0
 - docker engine version >= 19.03.13
+#### Python requirements
+- psycopg2-binary==2.8.6
+- SQLAlchemy==1.3.20
+- pytest==6.1.1
+- pyTelegramBotAPI==3.7.3
+- asyncio==3.4.3
+- feedparser==6.0.1
+- imgkit==1.0.2
+- async-timeout==3.0.1
+- aiopg==1.0.0
 
 
 ### Environment and configuration
