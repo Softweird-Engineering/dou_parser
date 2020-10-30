@@ -1,5 +1,5 @@
 import asyncio
-from typing import List, Dict
+from typing import List
 
 import telebot
 from async_timeout import timeout
@@ -68,17 +68,3 @@ async def main(urls, bot_api):
 
 def start(urls: List[str], bot_api: str):
 	asyncio.run(main(urls, bot_api))
-
-
-
-
-
-
-
-
-
-
-
-
-def d1():
-	return 'sdfsdf'
