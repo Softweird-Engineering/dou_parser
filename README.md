@@ -1,6 +1,6 @@
 ## DOU.UA parser bot
 ### Sample post
-![](https://github.com/noasck/dou_parser/sample.png)
+![](https://github.com/noasck/dou_parser/blob/master/sample.png)
 ### Requirements and libraries
 
 - docker-compose version >= 1.25.0
