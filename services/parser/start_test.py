@@ -8,5 +8,5 @@ from config import DATABASE_URL # noqa
 
 
 def test_dsn():
-    from start import DSN
+    from start import DSN # noqa
     assert DSN.get()

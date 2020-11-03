@@ -20,6 +20,7 @@
 ### Environment and configuration
 You need to set up **BOT_API** env to Telegram bot token in file ``` .env.bot ```. Also 
 you may need to set up **ADMIN_ID** env to your chat_id with bot in the file above.
+
 There's 2 start up options: 
 - ``` docker-compose.yml ``` - main runner.
 - ``` docker-compose.testbot.yml ``` - pytest runner.
