@@ -2,7 +2,7 @@ import imgkit
 import feedparser
 import asyncio
 import concurrent
-
+from .category import Category
 from logging import getLogger
 
 from .db import get_all_user_ids, is_new_job, is_new_user # noqa
@@ -30,13 +30,13 @@ def make_message(entry,category):
     return entry.title + "\n\n Ссылка на вакансию: " + entry.link + "\n\n Опубликовано: " + entry.published+'\n'+'#'+category
 
 
-async def process_feed(url):
-    logger.debug('Processing url: ' + url)
+async def process_feed(category:Category):
+    logger.debug('Processing url: ' + category.link)
     loop = asyncio.get_event_loop()
     user_ids = await get_all_user_ids()
-    for entry in (await parse_feed(url=url)).entries:
+    for entry in (await parse_feed(url=category.link)).entries:
         if await is_new_job(entry.link):
             with concurrent.futures.ProcessPoolExecutor() as pool: # noqa
                 img = await loop.run_in_executor(pool, imgkit.from_string,
                                                  "<meta charset='UTF-8'>" + entry.summary, False, {'quiet': ''})
-            yield Request(user_ids, make_message(entry), img)
+            yield Request(user_ids, make_message(entry,category.tag), img)
