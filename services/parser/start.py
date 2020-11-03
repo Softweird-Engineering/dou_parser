@@ -38,7 +38,7 @@ def start_app():
 
     if config.INIT_DB:
         logger.debug("db initialization")
-        create_tables()
+        create_tables(drop_all=False)
 
     logger.info("application started")
     start(config)

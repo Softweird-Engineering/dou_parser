@@ -14,7 +14,7 @@ class Category:
         :param link: link to RSS DOU feed.
         :param tag: hashtag pf the category consist of alpha characters and nums.
         """
-        if re.match("[a-zA-Z_0-9]*", tag):
+        if re.match("[a-zA-Z_0-9]{1,200}", tag):
             self.tag = tag
             self.link = link
         else:

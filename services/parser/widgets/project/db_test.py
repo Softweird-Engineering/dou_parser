@@ -19,7 +19,7 @@ def test_table_create():
 
 
 def test_is_new_user(user_id):
-    assert create_tables()
+    assert create_tables(drop_all=True)
 
     async def assert_is_new_user(uid):
         assert await is_new_user(uid)
@@ -30,7 +30,7 @@ def test_is_new_user(user_id):
 
 
 def test_is_new_job(job_link):
-    # assert create_tables()
+    assert create_tables(drop_all=True)
 
     async def assert_is_new_user(link):
         assert await is_new_user(link)

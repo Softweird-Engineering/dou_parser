@@ -1,4 +1,4 @@
-from config import DATABASE_URL # noqa
+from config import Config # noqa
 #
 # DB.instance(DATABASE_URL).init_db()
 #
