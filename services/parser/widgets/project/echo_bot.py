@@ -1,10 +1,13 @@
 import asyncio
-from typing import List
-
 import telebot
+from logging import getLogger
+
+from typing import List
 from async_timeout import timeout
 
 from ..project.controller import is_new_user, process_feed
+
+logger = getLogger('DOU_JOBS Parser-2.0')
 
 
 def create_new_user(message):
@@ -25,7 +28,7 @@ async def start_polling(bot_api: str):
 
 	@bot.message_handler(commands=['start'])
 	def add_new(message):
-		print("New user!", message.chat.id)
+		logger.info("New user!" + str(message.chat.id))
 		create_new_user(message)
 		bot.reply_to(message, "Now you are in our database <3 ")
 	while True:
@@ -34,7 +37,7 @@ async def start_polling(bot_api: str):
 			updates = bot.get_updates(offset=(bot.last_update_id + 1), timeout=2)
 			bot.process_new_updates(updates)
 		except Exception as e: # noqa
-			print("Something goes wrong!", str(e))
+			logger.error("Something goes wrong! " + str(e))
 			await asyncio.sleep(5)
 
 
@@ -48,34 +51,40 @@ async def check_for_new_jobs(urls: List[str], bot_api: str):
 				tasks.append(task)
 			async with timeout(100):
 				await asyncio.gather(*tasks)
-			print("Fetch complete")
+			logger.info("Fetch complete")
 			await asyncio.sleep(7200)
-			print("Be prepared for next fetch...")
+			logger.info("Be prepared for next fetch...")
 		except asyncio.TimeoutError as t: # noqa
-			print('Timeout exceeded!', str(t))
+			logger.error('Timeout exceeded! ' + str(t))
 
 
 async def fetch_url(url: str, bot_api: str):
+	"""
+	Function processing each uri in local event loop.
+	:param url: urs to parse RSS  feed.
+	:param bot_api: Telegram Bot token.
+	:return: void
+	"""
 	try:
 		bot = telebot.AsyncTeleBot(bot_api, threaded=False)
 		async for resp in process_feed(url):
 			for user_id in resp.users_id:
 				bot.send_photo(user_id, resp.image, resp.message)
 	except Exception as e:  # noqa
-		print("Something goes wrong in posts update!", str(e))
+		logger.error("Something goes wrong in posts update! " + str(e))
 		await asyncio.sleep(5)
 
 
-async def main(urls, bot_api):
-	await is_new_user(775621366)
-	await asyncio.gather(check_for_new_jobs(urls, bot_api), start_polling(bot_api))
+async def main(config):
+	await is_new_user(config.ADMIN_ID)
+	await asyncio.gather(check_for_new_jobs(config.PARSE_URLS, config.BOT_API), start_polling(config.BOT_API))
 
 
-def start(urls: List[str], bot_api: str):
+def start(config):
 	"""
 	Main application loop.
-	:param urls: uris to parse.
-	:param bot_api: Telegram Bot API token.
+	:param config: instance of Configuration class.
 	:return: void
 	"""
-	asyncio.run(main(urls, bot_api))
+
+	asyncio.run(main(config))

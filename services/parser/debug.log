@@ -1,0 +1,15 @@
+2020-11-03 16:36:46,200 - INFO - application started
+2020-11-03 16:38:29,951 - INFO - application started
+2020-11-03 16:40:18,325 - INFO - application started
+2020-11-03 16:41:34,161 - INFO - application started
+2020-11-03 16:42:32,241 - INFO - application started
+2020-11-03 16:42:33,714 - INFO - Fetch complete
+2020-11-03 16:43:50,549 - INFO - application started
+2020-11-03 16:43:50,564 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-03 16:43:50,565 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End
+2020-11-03 16:43:50,566 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js
+2020-11-03 16:43:50,567 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-03 16:43:50,569 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-03 16:43:50,570 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
+2020-11-03 16:43:50,571 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
+2020-11-03 16:43:51,643 - INFO - Fetch complete

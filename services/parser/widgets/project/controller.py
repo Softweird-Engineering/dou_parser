@@ -3,9 +3,12 @@ import feedparser
 import asyncio
 import concurrent
 
-from .db import get_all_user_ids, is_new_job, is_new_user # noqa
+from logging import getLogger
 
+from .db import get_all_user_ids, is_new_job, is_new_user # noqa
 from .injectors import Request
+
+logger = getLogger('DOU_JOBS Parser-2.0')
 
 
 async def parse_feed(url):
@@ -28,11 +31,9 @@ def make_message(entry):
 
 
 async def process_feed(url):
-    print('Processing url:', url)
+    logger.debug('Processing url: ' + url)
     loop = asyncio.get_event_loop()
     user_ids = await get_all_user_ids()
-    # print(user_ids)
-    # print(len(JobService.get_all()))
     for entry in (await parse_feed(url=url)).entries:
         if await is_new_job(entry.link):
             with concurrent.futures.ProcessPoolExecutor() as pool: # noqa
