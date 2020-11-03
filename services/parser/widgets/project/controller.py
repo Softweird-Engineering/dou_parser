@@ -2,11 +2,12 @@ import imgkit
 import feedparser
 import asyncio
 import concurrent
-from .category import Category
 from logging import getLogger
 
 from .db import get_all_user_ids, is_new_job, is_new_user  # noqa
 from .injectors import Request
+from .category import Category
+
 
 logger = getLogger('DOU_JOBS Parser-2.0')
 
@@ -32,7 +33,7 @@ def make_message(entry, category):
            entry.published + '\n\n' + '#' + category # noqa
 
 
-async def process_feed(category:Category):
+async def process_feed(category: Category):
     logger.debug('Processing url: ' + category.link)
     loop = asyncio.get_event_loop()
     user_ids = await get_all_user_ids()
@@ -41,4 +42,4 @@ async def process_feed(category:Category):
             with concurrent.futures.ProcessPoolExecutor() as pool:  # noqa
                 img = await loop.run_in_executor(pool, imgkit.from_string,
                                                  "<meta charset='UTF-8'>" + entry.summary, False, {'quiet': ''})
-            yield Request(user_ids, make_message(entry,category.tag), img)
+            yield Request(user_ids, make_message(entry, category.tag), img)

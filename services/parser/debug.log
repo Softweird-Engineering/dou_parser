@@ -22,3 +22,12 @@
 2020-11-03 16:59:10,841 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
 2020-11-03 16:59:10,845 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
 2020-11-03 16:59:16,322 - INFO - Fetch complete
+2020-11-03 23:02:10,268 - WARNING - Tried to insert non unique category: sample_link lorem_ipsum duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(sample_link) already exists.
+
+2020-11-03 23:04:39,631 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(sample_link) already exists.
+
+2020-11-03 23:05:53,459 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(sample_link) already exists.
+

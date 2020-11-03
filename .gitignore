@@ -4,3 +4,5 @@ venv
 *.pyc
 .pytest_cache
 .env.db
+.ipynb_checkpoints
+.virtual_documents

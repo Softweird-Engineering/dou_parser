@@ -19,23 +19,22 @@ user = Table(
 job = Table(
     'job', meta,
     Column('id', Integer, primary_key=True),
-    Column('link', String, unique=True),
-    Column('tag', String, unique=True)
+    Column('link', String, unique=True)
 )
 
 category = Table(
     'category', meta,
     Column('id', Integer, primary_key=True),
     Column('link', String, unique=True),
-
+    Column('tag', String, unique=True)
 )
 
 
 def create_tables(drop_all: bool = False):
     engine = sa.create_engine(DSN.get())
     if drop_all:
-        meta.drop_all(bind=engine, tables=[job, user], checkfirst=True)
-    meta.create_all(bind=engine, tables=[job, user], checkfirst=True)
+        meta.drop_all(bind=engine, tables=[job, user, category], checkfirst=True)
+    meta.create_all(bind=engine, tables=[job, user, category], checkfirst=True)
     return engine
 
 
