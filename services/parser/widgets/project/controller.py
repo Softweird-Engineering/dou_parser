@@ -14,20 +14,20 @@ logger = getLogger('DOU_JOBS Parser-2.0')
 async def parse_feed(url):
     """
     Function parses feed in local event loop.
-    :param url: RSS feed uri to parse.
+    :param url: RSS feed url to parse.
     :return: entries of RSS feed
     """
     loop = asyncio.get_event_loop()
     return await loop.run_in_executor(None, feedparser.parse, url)
 
 
-def make_message(entry):
+def make_message(entry,category):
     """
     Makes every entry representative for user delivery.
     :param entry: RSS entry from parser.
     :return: user-friendly string with all job's info.
     """
-    return entry.title + "\n\n Ссылка на вакансию: " + entry.link + "\n\n Опубликовано: " + entry.published
+    return entry.title + "\n\n Ссылка на вакансию: " + entry.link + "\n\n Опубликовано: " + entry.published+'\n'+'#'+category
 
 
 async def process_feed(url):
