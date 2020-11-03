@@ -19,12 +19,14 @@ user = Table(
 job = Table(
     'job', meta,
     Column('id', Integer, primary_key=True),
-    Column('link', String, unique=True)
+    Column('link', String, unique=True),
+    Column('tag', String, unique=True)
 )
 
 category = Table(
     'category', meta,
     Column('id', Integer, primary_key=True),
+    Column('link', String, unique=True),
 
 )
 

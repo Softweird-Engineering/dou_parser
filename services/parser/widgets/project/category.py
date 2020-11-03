@@ -21,3 +21,12 @@ class Category:
             msg = "Incorrect category tag " + tag
             logger.warning(msg)
             raise NameError(msg)
+
+    @property
+    def attributes(self) -> dict:
+        """
+        Method forms kwarg object from fields of instance.
+        :return: dict-like fields of category.
+        """
+        return {"link": self.link,
+                "tag": self.tag}
