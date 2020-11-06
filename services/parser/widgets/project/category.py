@@ -19,11 +19,12 @@ class Category:
         :param link: link to RSS DOU feed.
         :param tag: hashtag pf the category consist of alpha characters and nums.
         """
-        if re.match("[a-zA-Z_0-9]{1,200}", tag):
+        if re.match("[a-zA-Z_0-9]{1,200}", tag) and \
+                re.match(r"http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*(),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+", link):
             self.tag = tag
             self.link = link
         else:
-            msg = "Incorrect category tag " + tag
+            msg = "Incorrect category tag " + tag + " or link " + link
             logger.warning(msg)
             raise NameError(msg)
 
@@ -54,7 +55,7 @@ class Category:
                     await connection.execute(sa.insert(category).values(self.attributes))
                 except UniqueViolation as e:
                     logger.warning("Tried to insert non unique category: " + str(e))
-                    return "Tried to insert non unique category link or tag."
+                    raise NameError("Tried to insert non unique category link or tag.")
                 return "OK"
 
     async def delete(self):
@@ -62,3 +63,21 @@ class Category:
             async with engine.acquire() as connection:
                 await connection.execute(sa.delete(category).where(category.c.tag == self.tag))
                 return "OK"
+
+    @staticmethod
+    async def delete_by_tag(tag):
+        async with create_engine(DSN.get()) as engine:
+            async with engine.acquire() as connection:
+                await connection.execute(sa.delete(category).where(category.c.tag == tag))
+                return "OK"
+
+    @staticmethod
+    async def get_by_tag(tag):
+        async with create_engine(DSN.get()) as engine:
+            async with engine.acquire() as connection:
+                select_result = await connection.execute(category.select().where(category.c.tag == tag))
+                categories = await select_result.fetchall()
+                if len(categories) > 0:
+                    return Category(categories[0].link, categories[0].tag)
+                else:
+                    return None
