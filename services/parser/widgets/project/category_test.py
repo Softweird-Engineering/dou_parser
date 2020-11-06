@@ -1,31 +1,29 @@
 import asyncio
 
-from pytest import fixture
-
 from .category import Category
 from .db import create_tables
 
 
 def test_create_right():
-    assert Category("sdfsdfsdfsdfs", "sdfsdf90909_000_BHDHSb")
+    assert Category("https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End1", "sample_name_tag")
 
 
 def test_create_wrong():
     try:
-        Category("sdfsdf", "skdfhsdfhsdf*()&*&^")
+        Category("https://jobs.dou.ua/vacancies^^%&B/feeds/?exp=0-1&category=Front%20", "sample_name_&*&")
     except NameError as ne:
         assert str(ne)
 
 
 def test_attributes():
-    category = Category("sample_link", "lorem_ipsum")
-    assert category.attributes["link"] == "sample_link"
+    category = Category("https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End1", "lorem_ipsum")
+    assert category.attributes["link"] == "https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End1"
     assert category.attributes["tag"] == "lorem_ipsum"
 
 
 def test_create():
     create_tables(drop_all=True)
-    category = Category("sample_link", "lorem_ipsum")
+    category = Category("https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End1", "lorem_ipsum")
 
     async def wrapper():
         assert (await category.create()) == "OK"
@@ -35,8 +33,8 @@ def test_create():
 
 def test_get_all():
     create_tables(drop_all=True)
-    category_1 = Category("sample_link", "lorem_ipsum")
-    category_2 = Category("sample_link2", "lorem_ipsum2")
+    category_1 = Category("https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End1", "lorem_ipsum")
+    category_2 = Category("https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End2", "lorem_ipsum2")
 
     async def wrapper():
         assert (await category_1.create()) == "OK"
@@ -49,8 +47,8 @@ def test_get_all():
 
 def test_delete():
     create_tables(drop_all=True)
-    category_1 = Category("sample_link", "lorem_ipsum")
-    category_2 = Category("sample_link2", "lorem_ipsum2")
+    category_1 = Category("https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End1", "lorem_ipsum")
+    category_2 = Category("https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End2", "lorem_ipsum2")
 
     async def wrapper():
         assert (await category_1.create()) == "OK"

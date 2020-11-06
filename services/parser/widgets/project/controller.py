@@ -33,12 +33,16 @@ def make_message(entry, category):
            entry.published + '\n\n' + '#' + category # noqa
 
 
-async def process_feed(category: Category):
+async def process_feed(category: Category, is_for_view: bool = False):
     logger.debug('Processing url: ' + category.link)
     loop = asyncio.get_event_loop()
     user_ids = await get_all_user_ids()
     for entry in (await parse_feed(url=category.link)).entries:
-        if await is_new_job(entry.link):
+        if is_for_view:
+            condition = True
+        else:
+            condition = await is_new_job(entry.link)
+        if condition:
             with concurrent.futures.ProcessPoolExecutor() as pool:  # noqa
                 img = await loop.run_in_executor(pool, imgkit.from_string,
                                                  "<meta charset='UTF-8'>" + entry.summary, False, {'quiet': ''})
