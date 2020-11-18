@@ -7,7 +7,7 @@ from async_timeout import timeout
 from telebot import types
 
 from .category import Category
-from ..project.controller import is_new_user, process_feed
+from ..project.controller import is_new_user, process_feed_updates, process_feed_view
 
 logger = getLogger('DOU_JOBS Parser-2.0')
 
@@ -19,9 +19,10 @@ async def start_polling(config):
         if message.chat.id == config.ADMIN_ID and message.text != "Cancel":
             asyncio.ensure_future(Category.delete_by_tag(message.text))
             bot.send_message(message.chat.id, "Category was deleted successfully.",
-                             reply_markup=types.ReplyKeyboardRemove(selective=False))
+                             reply_markup=types.ReplyKeyboardRemove(selective=False)).wait()
         else:
-            bot.send_message(message.chat.id, "canceled", reply_markup=types.ReplyKeyboardRemove(selective=False))
+            bot.send_message(message.chat.id, "canceled",
+                             reply_markup=types.ReplyKeyboardRemove(selective=False)).wait()
 
     def process_create_step_1(message):
         if re.match(r"http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*(),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+", message.text):
@@ -82,12 +83,21 @@ async def start_polling(config):
     async def async_category_view(tag: str, user_id: int):
         category = await Category.get_by_tag(tag)
         if category:
-            await fetch_url(category, config.BOT_API, custom_id=user_id)
+            to_send = ""
+            async for job in process_feed_view(category):
+                to_send += job
+                if len(to_send) >= 1500:
+                    bot.send_message(user_id, to_send).wait()
+                    to_send = ""
+            bot.send_message(user_id, to_send).wait()
+        else:
+            bot.send_message(user_id, "y2k, invalid category tag " + tag).wait()
 
     def process_category_view(message):
         if message.text != "Cancel":
             asyncio.ensure_future(async_category_view(message.text, message.chat.id))
-            bot.send_message(message.chat.id, "Wait for jobs to view", reply_markup=types.ReplyKeyboardRemove()).wait()
+            bot.send_message(message.chat.id, "Fetching category, please wait",
+                             reply_markup=types.ReplyKeyboardRemove()).wait()
 
     async def add_categories_to_view(message):
         msg = "Select category to view all jobs:"
@@ -112,7 +122,7 @@ async def start_polling(config):
             item2 = types.KeyboardButton('Delete')
             item3 = types.KeyboardButton('Cancel')
             markup.add(item1, item2, item3)
-            task = bot.send_message(message.chat.id, "Choose an option:", reply_markup=markup)
+            task = bot.send_message(message.chat.id, "Choose an option:", reply_markup=markup).wait()
             bot.register_next_step_handler(task.wait(), process_name_step)
 
     while True:
@@ -144,21 +154,19 @@ async def check_for_new_jobs(bot_api: str):
             await asyncio.sleep(5)
 
 
-async def fetch_url(category: Category, bot_api: str, verbose: bool = True, custom_id=None):
+async def fetch_url(category: Category, bot_api: str, verbose: bool = True):
     """
     Function processing each uri in local event loop.
     :param category: instance of Category to parse.
     :param bot_api: Telegram Bot token.
     :param verbose: to send or not to send messages to existing users
-    :param custom_id: sends message to precise user
     :return: void
     """
     try:
         bot = telebot.AsyncTeleBot(bot_api, threaded=True)
-        async for resp in process_feed(category, is_for_view=custom_id is not None):
+        async for resp in process_feed_updates(category):
             if verbose:
-                users = resp.users_id if custom_id is None else [custom_id]
-                for user_id in users:
+                for user_id in resp.users_id:
                     bot.send_photo(user_id, resp.image, resp.message).wait()
     except Exception as e:  # noqa
         logger.error("Something goes wrong in posts update! " + str(e))

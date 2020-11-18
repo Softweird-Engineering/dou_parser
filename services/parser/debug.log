@@ -507,3 +507,769 @@ DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B
 2020-11-06 13:53:01,213 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
 2020-11-06 13:57:25,184 - INFO - New user!-1001292055360
 2020-11-06 13:57:45,956 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-06 19:34:24,412 - INFO - application started
+2020-11-06 19:34:25,421 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science) already exists.
+
+2020-11-06 19:34:25,423 - INFO - Successfully checked category datascience
+2020-11-06 19:34:25,482 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End) already exists.
+
+2020-11-06 19:34:25,483 - INFO - Successfully checked category frontend
+2020-11-06 19:34:25,498 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js) already exists.
+
+2020-11-06 19:34:25,499 - INFO - Successfully checked category nodejs
+2020-11-06 19:34:25,512 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python) already exists.
+
+2020-11-06 19:34:25,513 - INFO - Successfully checked category python
+2020-11-06 19:34:25,524 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET) already exists.
+
+2020-11-06 19:34:25,525 - INFO - Successfully checked category dotnet
+2020-11-06 19:34:25,538 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data) already exists.
+
+2020-11-06 19:34:25,541 - INFO - Successfully checked category bigdata
+2020-11-06 19:34:25,551 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android) already exists.
+
+2020-11-06 19:34:25,552 - INFO - Successfully checked category android
+2020-11-06 19:34:25,668 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-06 19:34:25,676 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End
+2020-11-06 19:34:25,683 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js
+2020-11-06 19:34:25,689 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-06 19:34:25,696 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-06 19:34:25,704 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
+2020-11-06 19:34:25,711 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
+2020-11-06 19:34:25,717 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-06 19:34:30,971 - INFO - New user!231966094
+2020-11-06 19:34:30,982 - INFO - New user!646277518
+2020-11-06 19:34:30,986 - INFO - New user!646277518
+2020-11-06 19:34:40,483 - INFO - Fetch complete
+2020-11-06 19:35:32,326 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-06 19:37:20,480 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-06 19:37:30,943 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-06 19:39:02,786 - INFO - New user!646277518
+2020-11-06 19:39:13,295 - INFO - New user!646277518
+2020-11-06 19:39:28,842 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-06 19:40:19,606 - INFO - New user!775621366
+2020-11-06 19:40:24,688 - INFO - New user!775621366
+2020-11-06 19:57:49,458 - INFO - application started
+2020-11-06 19:57:50,149 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science) already exists.
+
+2020-11-06 19:57:50,154 - INFO - Successfully checked category datascience
+2020-11-06 19:57:50,196 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End) already exists.
+
+2020-11-06 19:57:50,197 - INFO - Successfully checked category frontend
+2020-11-06 19:57:50,207 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js) already exists.
+
+2020-11-06 19:57:50,208 - INFO - Successfully checked category nodejs
+2020-11-06 19:57:50,218 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python) already exists.
+
+2020-11-06 19:57:50,219 - INFO - Successfully checked category python
+2020-11-06 19:57:50,228 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET) already exists.
+
+2020-11-06 19:57:50,229 - INFO - Successfully checked category dotnet
+2020-11-06 19:57:50,242 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data) already exists.
+
+2020-11-06 19:57:50,242 - INFO - Successfully checked category bigdata
+2020-11-06 19:57:50,249 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android) already exists.
+
+2020-11-06 19:57:50,250 - INFO - Successfully checked category android
+2020-11-06 19:57:50,340 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-06 19:57:50,343 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End
+2020-11-06 19:57:50,345 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js
+2020-11-06 19:57:50,348 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-06 19:57:50,351 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-06 19:57:50,355 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
+2020-11-06 19:57:50,357 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
+2020-11-06 19:57:50,360 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-06 19:57:51,716 - INFO - Fetch complete
+2020-11-06 19:58:00,673 - INFO - New user!775621366
+2020-11-06 19:59:57,135 - INFO - application started
+2020-11-06 19:59:57,170 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science) already exists.
+
+2020-11-06 19:59:57,171 - INFO - Successfully checked category datascience
+2020-11-06 19:59:57,179 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End) already exists.
+
+2020-11-06 19:59:57,180 - INFO - Successfully checked category frontend
+2020-11-06 19:59:57,191 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js) already exists.
+
+2020-11-06 19:59:57,192 - INFO - Successfully checked category nodejs
+2020-11-06 19:59:57,199 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python) already exists.
+
+2020-11-06 19:59:57,200 - INFO - Successfully checked category python
+2020-11-06 19:59:57,210 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET) already exists.
+
+2020-11-06 19:59:57,210 - INFO - Successfully checked category dotnet
+2020-11-06 19:59:57,220 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data) already exists.
+
+2020-11-06 19:59:57,221 - INFO - Successfully checked category bigdata
+2020-11-06 19:59:57,232 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android) already exists.
+
+2020-11-06 19:59:57,232 - INFO - Successfully checked category android
+2020-11-06 19:59:57,252 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-06 19:59:57,254 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End
+2020-11-06 19:59:57,256 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js
+2020-11-06 19:59:57,257 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-06 19:59:57,260 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-06 19:59:57,261 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
+2020-11-06 19:59:57,263 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
+2020-11-06 19:59:57,264 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-06 19:59:58,947 - INFO - Fetch complete
+2020-11-06 20:10:05,028 - INFO - application started
+2020-11-06 20:10:06,029 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science) already exists.
+
+2020-11-06 20:10:06,032 - INFO - Successfully checked category datascience
+2020-11-06 20:10:06,083 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End) already exists.
+
+2020-11-06 20:10:06,084 - INFO - Successfully checked category frontend
+2020-11-06 20:10:06,101 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js) already exists.
+
+2020-11-06 20:10:06,102 - INFO - Successfully checked category nodejs
+2020-11-06 20:10:06,112 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python) already exists.
+
+2020-11-06 20:10:06,113 - INFO - Successfully checked category python
+2020-11-06 20:10:06,122 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET) already exists.
+
+2020-11-06 20:10:06,124 - INFO - Successfully checked category dotnet
+2020-11-06 20:10:06,136 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data) already exists.
+
+2020-11-06 20:10:06,137 - INFO - Successfully checked category bigdata
+2020-11-06 20:10:06,151 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android) already exists.
+
+2020-11-06 20:10:06,152 - INFO - Successfully checked category android
+2020-11-06 20:10:06,236 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-06 20:10:06,238 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End
+2020-11-06 20:10:06,239 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js
+2020-11-06 20:10:06,241 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-06 20:10:06,243 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-06 20:10:06,246 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
+2020-11-06 20:10:06,247 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
+2020-11-06 20:10:06,249 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-06 20:10:07,422 - INFO - Fetch complete
+2020-11-06 20:18:05,851 - INFO - application started
+2020-11-06 20:18:05,902 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science) already exists.
+
+2020-11-06 20:18:05,903 - INFO - Successfully checked category datascience
+2020-11-06 20:18:05,920 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End) already exists.
+
+2020-11-06 20:18:05,921 - INFO - Successfully checked category frontend
+2020-11-06 20:18:05,936 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js) already exists.
+
+2020-11-06 20:18:05,939 - INFO - Successfully checked category nodejs
+2020-11-06 20:18:05,948 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python) already exists.
+
+2020-11-06 20:18:05,948 - INFO - Successfully checked category python
+2020-11-06 20:18:05,963 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET) already exists.
+
+2020-11-06 20:18:05,963 - INFO - Successfully checked category dotnet
+2020-11-06 20:18:05,976 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data) already exists.
+
+2020-11-06 20:18:05,978 - INFO - Successfully checked category bigdata
+2020-11-06 20:18:05,984 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android) already exists.
+
+2020-11-06 20:18:05,985 - INFO - Successfully checked category android
+2020-11-06 20:18:06,003 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-06 20:18:06,005 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End
+2020-11-06 20:18:06,007 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js
+2020-11-06 20:18:06,009 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-06 20:18:06,012 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-06 20:18:06,014 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
+2020-11-06 20:18:06,015 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
+2020-11-06 20:18:06,017 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-06 20:18:07,256 - INFO - Fetch complete
+2020-11-06 20:21:48,880 - INFO - application started
+2020-11-06 20:21:48,894 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science) already exists.
+
+2020-11-06 20:21:48,895 - INFO - Successfully checked category datascience
+2020-11-06 20:21:48,906 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End) already exists.
+
+2020-11-06 20:21:48,907 - INFO - Successfully checked category frontend
+2020-11-06 20:21:48,915 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js) already exists.
+
+2020-11-06 20:21:48,916 - INFO - Successfully checked category nodejs
+2020-11-06 20:21:48,928 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python) already exists.
+
+2020-11-06 20:21:48,929 - INFO - Successfully checked category python
+2020-11-06 20:21:48,938 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET) already exists.
+
+2020-11-06 20:21:48,939 - INFO - Successfully checked category dotnet
+2020-11-06 20:21:48,949 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data) already exists.
+
+2020-11-06 20:21:48,950 - INFO - Successfully checked category bigdata
+2020-11-06 20:21:48,957 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android) already exists.
+
+2020-11-06 20:21:48,957 - INFO - Successfully checked category android
+2020-11-06 20:21:48,979 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-06 20:21:48,980 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End
+2020-11-06 20:21:48,982 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js
+2020-11-06 20:21:48,984 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-06 20:21:48,985 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-06 20:21:48,987 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
+2020-11-06 20:21:48,988 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
+2020-11-06 20:21:48,989 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-06 20:21:50,065 - INFO - Fetch complete
+2020-11-06 20:23:51,534 - INFO - New user!674104309
+2020-11-07 11:40:12,561 - INFO - application started
+2020-11-07 11:40:13,715 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science) already exists.
+
+2020-11-07 11:40:13,718 - INFO - Successfully checked category datascience
+2020-11-07 11:40:13,765 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End) already exists.
+
+2020-11-07 11:40:13,765 - INFO - Successfully checked category frontend
+2020-11-07 11:40:13,777 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js) already exists.
+
+2020-11-07 11:40:13,777 - INFO - Successfully checked category nodejs
+2020-11-07 11:40:13,791 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python) already exists.
+
+2020-11-07 11:40:13,791 - INFO - Successfully checked category python
+2020-11-07 11:40:13,806 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET) already exists.
+
+2020-11-07 11:40:13,807 - INFO - Successfully checked category dotnet
+2020-11-07 11:40:13,827 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data) already exists.
+
+2020-11-07 11:40:13,827 - INFO - Successfully checked category bigdata
+2020-11-07 11:40:13,841 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android) already exists.
+
+2020-11-07 11:40:13,842 - INFO - Successfully checked category android
+2020-11-07 11:40:13,927 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-07 11:40:13,929 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End
+2020-11-07 11:40:13,932 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js
+2020-11-07 11:40:13,933 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-07 11:40:13,935 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-07 11:40:13,938 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
+2020-11-07 11:40:13,940 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
+2020-11-07 11:40:13,941 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-07 11:40:15,217 - INFO - Fetch complete
+2020-11-07 15:54:43,136 - ERROR - Something goes wrong! ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2020-11-07 17:19:13,977 - INFO - Be prepared for next fetch...
+2020-11-07 17:19:13,979 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-07 17:19:13,980 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End
+2020-11-07 17:19:13,984 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js
+2020-11-07 17:19:13,987 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-07 17:19:13,988 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-07 17:19:13,990 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
+2020-11-07 17:19:13,994 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
+2020-11-07 17:19:13,997 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-07 17:19:15,802 - INFO - Fetch complete
+2020-11-09 13:44:51,830 - INFO - application started
+2020-11-09 13:44:52,844 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science) already exists.
+
+2020-11-09 13:44:52,846 - INFO - Successfully checked category datascience
+2020-11-09 13:44:52,891 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End) already exists.
+
+2020-11-09 13:44:52,892 - INFO - Successfully checked category frontend
+2020-11-09 13:44:52,903 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js) already exists.
+
+2020-11-09 13:44:52,904 - INFO - Successfully checked category nodejs
+2020-11-09 13:44:52,913 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python) already exists.
+
+2020-11-09 13:44:52,914 - INFO - Successfully checked category python
+2020-11-09 13:44:52,924 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET) already exists.
+
+2020-11-09 13:44:52,925 - INFO - Successfully checked category dotnet
+2020-11-09 13:44:52,933 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data) already exists.
+
+2020-11-09 13:44:52,933 - INFO - Successfully checked category bigdata
+2020-11-09 13:44:52,940 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android) already exists.
+
+2020-11-09 13:44:52,941 - INFO - Successfully checked category android
+2020-11-09 13:44:53,043 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-09 13:44:53,050 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End
+2020-11-09 13:44:53,057 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js
+2020-11-09 13:44:53,064 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-09 13:44:53,070 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-09 13:44:53,077 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
+2020-11-09 13:44:53,081 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
+2020-11-09 13:44:53,084 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-09 13:45:09,535 - INFO - Fetch complete
+2020-11-09 13:46:40,559 - INFO - New user!470301083
+2020-11-09 13:48:27,685 - INFO - New user!470798489
+2020-11-09 13:53:21,680 - INFO - New user!775621366
+2020-11-09 14:01:49,045 - INFO - New user!385286595
+2020-11-09 14:04:31,452 - INFO - New user!445908898
+2020-11-09 14:13:44,547 - INFO - New user!508087580
+2020-11-09 15:45:09,539 - INFO - Be prepared for next fetch...
+2020-11-09 15:45:09,553 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-09 15:45:09,558 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End
+2020-11-09 15:45:09,562 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js
+2020-11-09 15:45:09,570 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-09 15:45:09,576 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-09 15:45:09,579 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
+2020-11-09 15:45:09,587 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
+2020-11-09 15:45:09,598 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-09 15:45:11,120 - INFO - Fetch complete
+2020-11-09 16:25:37,865 - INFO - New user!392148838
+2020-11-09 17:45:11,124 - INFO - Be prepared for next fetch...
+2020-11-09 17:45:11,129 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-09 17:45:11,136 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End
+2020-11-09 17:45:11,140 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js
+2020-11-09 17:45:11,144 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-09 17:45:11,146 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-09 17:45:11,149 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
+2020-11-09 17:45:11,151 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
+2020-11-09 17:45:11,155 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-09 17:45:12,453 - INFO - Fetch complete
+2020-11-09 19:39:51,742 - INFO - New user!614103891
+2020-11-09 19:45:12,454 - INFO - Be prepared for next fetch...
+2020-11-09 19:45:12,459 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-09 19:45:12,465 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End
+2020-11-09 19:45:12,468 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js
+2020-11-09 19:45:12,470 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-09 19:45:12,471 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-09 19:45:12,473 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
+2020-11-09 19:45:12,474 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
+2020-11-09 19:45:12,475 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-09 19:45:13,434 - INFO - Fetch complete
+2020-11-10 19:16:48,317 - INFO - application started
+2020-11-10 19:16:49,346 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science) already exists.
+
+2020-11-10 19:16:49,348 - INFO - Successfully checked category datascience
+2020-11-10 19:16:49,399 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End) already exists.
+
+2020-11-10 19:16:49,401 - INFO - Successfully checked category frontend
+2020-11-10 19:16:49,438 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js) already exists.
+
+2020-11-10 19:16:49,440 - INFO - Successfully checked category nodejs
+2020-11-10 19:16:49,463 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python) already exists.
+
+2020-11-10 19:16:49,465 - INFO - Successfully checked category python
+2020-11-10 19:16:49,484 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET) already exists.
+
+2020-11-10 19:16:49,485 - INFO - Successfully checked category dotnet
+2020-11-10 19:16:49,504 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data) already exists.
+
+2020-11-10 19:16:49,506 - INFO - Successfully checked category bigdata
+2020-11-10 19:16:49,515 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android) already exists.
+
+2020-11-10 19:16:49,516 - INFO - Successfully checked category android
+2020-11-10 19:16:49,623 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-10 19:16:49,629 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End
+2020-11-10 19:16:49,635 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js
+2020-11-10 19:16:49,640 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-10 19:16:49,646 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-10 19:16:49,651 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
+2020-11-10 19:16:49,657 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
+2020-11-10 19:16:49,662 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-10 19:16:51,069 - INFO - Fetch complete
+2020-11-10 19:16:54,879 - INFO - New user!625462305
+2020-11-10 19:16:54,884 - INFO - New user!633402310
+2020-11-10 19:16:54,887 - INFO - New user!639430465
+2020-11-10 19:17:56,619 - INFO - application started
+2020-11-10 19:17:56,630 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science) already exists.
+
+2020-11-10 19:17:56,631 - INFO - Successfully checked category datascience
+2020-11-10 19:17:56,638 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End) already exists.
+
+2020-11-10 19:17:56,638 - INFO - Successfully checked category frontend
+2020-11-10 19:17:56,645 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js) already exists.
+
+2020-11-10 19:17:56,645 - INFO - Successfully checked category nodejs
+2020-11-10 19:17:56,654 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python) already exists.
+
+2020-11-10 19:17:56,654 - INFO - Successfully checked category python
+2020-11-10 19:17:56,661 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET) already exists.
+
+2020-11-10 19:17:56,661 - INFO - Successfully checked category dotnet
+2020-11-10 19:17:56,668 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data) already exists.
+
+2020-11-10 19:17:56,669 - INFO - Successfully checked category bigdata
+2020-11-10 19:17:56,675 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android) already exists.
+
+2020-11-10 19:17:56,675 - INFO - Successfully checked category android
+2020-11-10 19:17:56,691 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-10 19:17:56,693 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End
+2020-11-10 19:17:56,694 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js
+2020-11-10 19:17:56,696 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-10 19:17:56,698 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-10 19:17:56,699 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
+2020-11-10 19:17:56,700 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
+2020-11-10 19:17:56,702 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-10 19:17:57,785 - INFO - Fetch complete
+2020-11-10 19:55:02,590 - INFO - New user!-1001292055360
+2020-11-11 11:31:17,757 - INFO - application started
+2020-11-11 11:31:18,747 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science) already exists.
+
+2020-11-11 11:31:18,750 - INFO - Successfully checked category datascience
+2020-11-11 11:31:18,813 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End) already exists.
+
+2020-11-11 11:31:18,814 - INFO - Successfully checked category frontend
+2020-11-11 11:31:18,828 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js) already exists.
+
+2020-11-11 11:31:18,828 - INFO - Successfully checked category nodejs
+2020-11-11 11:31:18,842 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python) already exists.
+
+2020-11-11 11:31:18,842 - INFO - Successfully checked category python
+2020-11-11 11:31:18,851 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET) already exists.
+
+2020-11-11 11:31:18,851 - INFO - Successfully checked category dotnet
+2020-11-11 11:31:18,859 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data) already exists.
+
+2020-11-11 11:31:18,860 - INFO - Successfully checked category bigdata
+2020-11-11 11:31:18,874 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android) already exists.
+
+2020-11-11 11:31:18,874 - INFO - Successfully checked category android
+2020-11-11 11:31:18,967 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-11 11:31:18,968 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End
+2020-11-11 11:31:18,970 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js
+2020-11-11 11:31:18,972 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-11 11:31:18,973 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-11 11:31:18,975 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
+2020-11-11 11:31:18,978 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
+2020-11-11 11:31:18,979 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-11 11:31:24,756 - INFO - New user!522271595
+2020-11-11 11:32:46,904 - ERROR - Something goes wrong! HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+2020-11-11 11:32:47,102 - INFO - Fetch complete
+2020-11-11 11:33:40,321 - INFO - application started
+2020-11-11 11:33:40,336 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science) already exists.
+
+2020-11-11 11:33:40,337 - INFO - Successfully checked category datascience
+2020-11-11 11:33:40,346 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End) already exists.
+
+2020-11-11 11:33:40,347 - INFO - Successfully checked category frontend
+2020-11-11 11:33:40,355 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js) already exists.
+
+2020-11-11 11:33:40,355 - INFO - Successfully checked category nodejs
+2020-11-11 11:33:40,363 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python) already exists.
+
+2020-11-11 11:33:40,364 - INFO - Successfully checked category python
+2020-11-11 11:33:40,376 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET) already exists.
+
+2020-11-11 11:33:40,377 - INFO - Successfully checked category dotnet
+2020-11-11 11:33:40,385 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data) already exists.
+
+2020-11-11 11:33:40,385 - INFO - Successfully checked category bigdata
+2020-11-11 11:33:40,395 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android) already exists.
+
+2020-11-11 11:33:40,396 - INFO - Successfully checked category android
+2020-11-11 11:33:40,415 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-11 11:33:40,417 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End
+2020-11-11 11:33:40,420 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js
+2020-11-11 11:33:40,422 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-11 11:33:40,423 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-11 11:33:40,426 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
+2020-11-11 11:33:40,428 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
+2020-11-11 11:33:40,430 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-11 11:33:50,022 - ERROR - Something goes wrong! HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=3.5)
+2020-11-11 11:33:52,679 - ERROR - Something goes wrong in posts update! Remote end closed connection without response
+2020-11-11 11:33:52,681 - ERROR - Something goes wrong in posts update! 
+2020-11-11 11:33:52,682 - ERROR - Something goes wrong in posts update! 
+2020-11-11 11:33:52,683 - ERROR - Something goes wrong in posts update! 
+2020-11-11 11:33:52,684 - ERROR - Something goes wrong in posts update! 
+2020-11-11 11:33:52,685 - ERROR - Something goes wrong in posts update! 
+2020-11-11 11:33:52,686 - ERROR - Something goes wrong in posts update! 
+2020-11-11 11:33:52,686 - ERROR - Something goes wrong in posts update! 
+2020-11-11 13:26:35,882 - INFO - application started
+2020-11-11 13:26:35,894 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science) already exists.
+
+2020-11-11 13:26:35,895 - INFO - Successfully checked category datascience
+2020-11-11 13:26:35,902 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End) already exists.
+
+2020-11-11 13:26:35,902 - INFO - Successfully checked category frontend
+2020-11-11 13:26:35,910 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js) already exists.
+
+2020-11-11 13:26:35,910 - INFO - Successfully checked category nodejs
+2020-11-11 13:26:35,919 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python) already exists.
+
+2020-11-11 13:26:35,920 - INFO - Successfully checked category python
+2020-11-11 13:26:35,928 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET) already exists.
+
+2020-11-11 13:26:35,929 - INFO - Successfully checked category dotnet
+2020-11-11 13:26:35,936 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data) already exists.
+
+2020-11-11 13:26:35,937 - INFO - Successfully checked category bigdata
+2020-11-11 13:26:35,944 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android) already exists.
+
+2020-11-11 13:26:35,945 - INFO - Successfully checked category android
+2020-11-11 13:26:35,962 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-11 13:26:35,963 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End
+2020-11-11 13:26:35,965 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js
+2020-11-11 13:26:35,967 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-11 13:26:35,968 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-11 13:26:35,970 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
+2020-11-11 13:26:35,971 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
+2020-11-11 13:26:35,973 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-11 13:27:03,575 - INFO - Fetch complete
+2020-11-11 13:28:16,580 - INFO - New user!349919077
+2020-11-11 13:28:36,947 - INFO - application started
+2020-11-11 13:28:36,960 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science) already exists.
+
+2020-11-11 13:28:36,960 - INFO - Successfully checked category datascience
+2020-11-11 13:28:36,967 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End) already exists.
+
+2020-11-11 13:28:36,968 - INFO - Successfully checked category frontend
+2020-11-11 13:28:36,977 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js) already exists.
+
+2020-11-11 13:28:36,978 - INFO - Successfully checked category nodejs
+2020-11-11 13:28:36,989 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python) already exists.
+
+2020-11-11 13:28:36,990 - INFO - Successfully checked category python
+2020-11-11 13:28:36,998 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET) already exists.
+
+2020-11-11 13:28:36,999 - INFO - Successfully checked category dotnet
+2020-11-11 13:28:37,007 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data) already exists.
+
+2020-11-11 13:28:37,008 - INFO - Successfully checked category bigdata
+2020-11-11 13:28:37,015 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android) already exists.
+
+2020-11-11 13:28:37,017 - INFO - Successfully checked category android
+2020-11-11 13:28:37,033 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-11 13:28:37,035 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End
+2020-11-11 13:28:37,037 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js
+2020-11-11 13:28:37,038 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-11 13:28:37,040 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-11 13:28:37,042 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
+2020-11-11 13:28:37,044 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
+2020-11-11 13:28:37,046 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-11 13:28:46,884 - INFO - Fetch complete
+2020-11-14 18:34:10,547 - INFO - application started
+2020-11-14 18:34:13,153 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science) already exists.
+
+2020-11-14 18:34:13,158 - INFO - Successfully checked category datascience
+2020-11-14 18:34:13,249 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End) already exists.
+
+2020-11-14 18:34:13,251 - INFO - Successfully checked category frontend
+2020-11-14 18:34:13,270 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js) already exists.
+
+2020-11-14 18:34:13,272 - INFO - Successfully checked category nodejs
+2020-11-14 18:34:13,294 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python) already exists.
+
+2020-11-14 18:34:13,295 - INFO - Successfully checked category python
+2020-11-14 18:34:13,314 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET) already exists.
+
+2020-11-14 18:34:13,315 - INFO - Successfully checked category dotnet
+2020-11-14 18:34:13,334 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data) already exists.
+
+2020-11-14 18:34:13,335 - INFO - Successfully checked category bigdata
+2020-11-14 18:34:13,344 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android) already exists.
+
+2020-11-14 18:34:13,345 - INFO - Successfully checked category android
+2020-11-14 18:34:13,518 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-14 18:34:13,529 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End
+2020-11-14 18:34:13,535 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js
+2020-11-14 18:34:13,543 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-14 18:34:13,551 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-14 18:34:13,558 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
+2020-11-14 18:34:13,565 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
+2020-11-14 18:34:13,569 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-14 18:35:08,618 - INFO - Fetch complete
+2020-11-17 13:03:55,910 - INFO - application started
+2020-11-17 13:03:56,897 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science) already exists.
+
+2020-11-17 13:03:56,898 - INFO - Successfully checked category datascience
+2020-11-17 13:03:56,955 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End) already exists.
+
+2020-11-17 13:03:56,956 - INFO - Successfully checked category frontend
+2020-11-17 13:03:56,977 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js) already exists.
+
+2020-11-17 13:03:56,979 - INFO - Successfully checked category nodejs
+2020-11-17 13:03:56,999 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python) already exists.
+
+2020-11-17 13:03:56,999 - INFO - Successfully checked category python
+2020-11-17 13:03:57,010 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET) already exists.
+
+2020-11-17 13:03:57,011 - INFO - Successfully checked category dotnet
+2020-11-17 13:03:57,023 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data) already exists.
+
+2020-11-17 13:03:57,024 - INFO - Successfully checked category bigdata
+2020-11-17 13:03:57,033 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android) already exists.
+
+2020-11-17 13:03:57,034 - INFO - Successfully checked category android
+2020-11-17 13:03:57,143 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-17 13:03:57,150 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End
+2020-11-17 13:03:57,156 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js
+2020-11-17 13:03:57,162 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-17 13:03:57,166 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-17 13:03:57,169 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
+2020-11-17 13:03:57,173 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
+2020-11-17 13:03:57,175 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-17 13:03:58,382 - ERROR - Something goes wrong in posts update! duplicate key value violates unique constraint "job_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/companies/sysgears/vacancies/139077/?utm_source=jobsrss) already exists.
+
+2020-11-17 13:04:05,399 - ERROR - Something goes wrong in posts update! 
+2020-11-17 13:04:05,400 - ERROR - Something goes wrong! 
+2020-11-17 13:04:05,404 - ERROR - Something goes wrong in posts update! asynchronous connection attempt underway
+2020-11-17 13:04:43,580 - INFO - application started
+2020-11-17 13:04:43,597 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science) already exists.
+
+2020-11-17 13:04:43,598 - INFO - Successfully checked category datascience
+2020-11-17 13:04:43,605 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End) already exists.
+
+2020-11-17 13:04:43,605 - INFO - Successfully checked category frontend
+2020-11-17 13:04:43,614 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js) already exists.
+
+2020-11-17 13:04:43,615 - INFO - Successfully checked category nodejs
+2020-11-17 13:04:43,623 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python) already exists.
+
+2020-11-17 13:04:43,624 - INFO - Successfully checked category python
+2020-11-17 13:04:43,632 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET) already exists.
+
+2020-11-17 13:04:43,633 - INFO - Successfully checked category dotnet
+2020-11-17 13:04:43,640 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data) already exists.
+
+2020-11-17 13:04:43,641 - INFO - Successfully checked category bigdata
+2020-11-17 13:04:43,649 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android) already exists.
+
+2020-11-17 13:04:43,650 - INFO - Successfully checked category android
+2020-11-17 13:04:43,666 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-17 13:04:43,668 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End
+2020-11-17 13:04:43,670 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js
+2020-11-17 13:04:43,672 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-17 13:04:43,674 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-17 13:04:43,675 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
+2020-11-17 13:04:43,677 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
+2020-11-17 13:04:43,679 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-17 13:05:40,150 - INFO - Fetch complete
+2020-11-18 11:38:24,639 - INFO - application started
+2020-11-18 11:38:25,691 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science) already exists.
+
+2020-11-18 11:38:25,693 - INFO - Successfully checked category datascience
+2020-11-18 11:38:25,740 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End) already exists.
+
+2020-11-18 11:38:25,740 - INFO - Successfully checked category frontend
+2020-11-18 11:38:25,749 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js) already exists.
+
+2020-11-18 11:38:25,750 - INFO - Successfully checked category nodejs
+2020-11-18 11:38:25,760 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python) already exists.
+
+2020-11-18 11:38:25,760 - INFO - Successfully checked category python
+2020-11-18 11:38:25,768 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET) already exists.
+
+2020-11-18 11:38:25,768 - INFO - Successfully checked category dotnet
+2020-11-18 11:38:25,779 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data) already exists.
+
+2020-11-18 11:38:25,779 - INFO - Successfully checked category bigdata
+2020-11-18 11:38:25,787 - WARNING - Tried to insert non unique category: duplicate key value violates unique constraint "category_link_key"
+DETAIL:  Key (link)=(https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android) already exists.
+
+2020-11-18 11:38:25,788 - INFO - Successfully checked category android
+2020-11-18 11:38:25,877 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Data%20Science
+2020-11-18 11:38:25,879 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Front%20End
+2020-11-18 11:38:25,880 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Node.js
+2020-11-18 11:38:25,882 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=Python
+2020-11-18 11:38:25,884 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?exp=0-1&category=.NET
+2020-11-18 11:38:25,885 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Big%20Data
+2020-11-18 11:38:25,887 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/feeds/?city=%D0%9A%D0%B8%D0%B5%D0%B2&exp=0-1&category=Android
+2020-11-18 11:38:25,888 - DEBUG - Processing url: https://jobs.dou.ua/vacancies/?category=Golang
+2020-11-18 11:38:44,727 - INFO - Fetch complete
