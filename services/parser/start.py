@@ -6,11 +6,7 @@ from widgets.project.db import create_tables # noqa
 import time
 
 
-try:
-    config = Config()
-except TypeError as e:
-    logger.error("Couldn't parse configuration from environment.")
-    raise ValueError("Couldn't parse configuration from environment." + " " + str(e))
+
 
 time.sleep(4)
 
