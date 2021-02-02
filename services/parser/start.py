@@ -1,32 +1,16 @@
-from config import Config # noqa
+from project.config import Config # noqa
 
 from widgets.project.injectors import DSN # noqa
 from widgets.project.db import create_tables # noqa
 
 import time
-import logging
 
-logger = logging.getLogger('DOU_JOBS Parser-2.0')
-logger.setLevel(logging.DEBUG)
-
-formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s') # noqa
-
-consoleHeader = logging.StreamHandler()
-consoleHeader.setFormatter(formatter)
-consoleHeader.setLevel(logging.INFO)
-
-fileHandler = logging.FileHandler("debug.log")
-fileHandler.setLevel(logging.DEBUG)
-fileHandler.setFormatter(formatter)
-
-logger.addHandler(fileHandler)
-logger.addHandler(consoleHeader)
 
 try:
     config = Config()
-except TypeError:
-    logging.error("Couldn't parse configuration from environment")
-    raise RuntimeError("Couldn't parse configuration from environment")
+except TypeError as e:
+    logger.error("Couldn't parse configuration from environment.")
+    raise ValueError("Couldn't parse configuration from environment." + " " + str(e))
 
 time.sleep(4)
 
